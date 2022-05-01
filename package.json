@@ -35,7 +35,7 @@
     "@types/react": "17.x.x"
   },
   "scripts": {
-    "build": "dwfeFs rmForce dist && tsc -b src/tsconfig.json && node dist/js/dist-others.js"
+    "build": "dwfeFs rmForce dist && tsc -b src/tsconfig.json && node dist/cjs/dist-others.js"
   },
   "publishConfig": {
     "access": "public"

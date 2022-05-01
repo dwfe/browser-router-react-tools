@@ -3,7 +3,7 @@ import {extname, join} from 'path';
 
 const BASE_DIR: Readonly<string> = process.cwd();
 const SRC_DIR: Readonly<string> = join(BASE_DIR, 'src');
-const DIST_DIR: Readonly<string> = join(BASE_DIR, 'dist/js');
+const DIST_DIR: Readonly<string> = join(BASE_DIR, 'dist/cjs');
 
 copy(SRC_DIR, DIST_DIR, {
   allowedToCopyFilter: args => {
