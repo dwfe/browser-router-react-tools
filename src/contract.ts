@@ -1,7 +1,6 @@
-import {IActionData, TRouteContext} from '@do-while-for-each/path-resolver'
+import {IActionData} from '@do-while-for-each/browser-router'
 import {HTMLProps} from 'react'
 
-export interface IRoutableProps<TNote = any,
-  TContext extends TRouteContext = TRouteContext> extends HTMLProps<any> {
-  actionData?: IActionData<TNote, TContext>;
+export interface IRoutableProps extends HTMLProps<any> {
+  actionData?: IActionData;
 }

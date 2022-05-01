@@ -3,9 +3,10 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "CommonJS",
-    "outDir": "../dist/js",
+    "outDir": "../dist/cjs",
     "declarationDir": "../dist/types",
     "declaration": true,
+    "declarationMap": true,
     "jsx": "react-jsx"
   }
 }
