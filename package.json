@@ -1,0 +1,43 @@
+{
+  "name": "@do-while-for-each/browser-router-react-tools",
+  "description": "Some browser-router's tools for React.js app",
+  "version": "2.0.4",
+  "exports": "./dist/cjs/index.js",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/types/*"
+      ]
+    }
+  },
+  "homepage": "https://github.com/dwfe/browser-router-react-tools",
+  "bugs": "https://github.com/dwfe/browser-router-react-tools/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dwfe/browser-router-react-tools.git"
+  },
+  "keywords": [],
+  "author": "Do-While-For-Each",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "@do-while-for-each/browser-router": "^2.0.4",
+    "@do-while-for-each/react": "^1.2.2"
+  },
+  "devDependencies": {
+    "@do-while-for-each/tsconfig": "^1.0.3",
+    "@do-while-for-each/fs": "^1.2.18",
+    "@types/autosize": "4.x.x",
+    "@types/react": "17.x.x"
+  },
+  "scripts": {
+    "build": "dwfeFs rmForce dist && tsc -b src/tsconfig.json && node dist/js/dist-others.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
