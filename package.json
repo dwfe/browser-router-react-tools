@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "@do-while-for-each/browser-router": "^2.0.4",
-    "@do-while-for-each/react": "^1.2.2"
+    "@do-while-for-each/react": "^1.2.3"
   },
   "devDependencies": {
     "@do-while-for-each/tsconfig": "^1.0.3",
@@ -35,7 +35,7 @@
     "@types/react": "17.x.x"
   },
   "scripts": {
-    "build": "dwfeFs rmForce dist && tsc -b src/tsconfig.json && node dist/cjs/dist-others.js"
+    "build": "dwfeFs rmForce dist --noConfirm && tsc -b src/tsconfig.json && node dist/cjs/dist-others.js"
   },
   "publishConfig": {
     "access": "public"
