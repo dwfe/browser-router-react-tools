@@ -17,7 +17,7 @@
     "url": "git@github.com:dwfe/browser-router-react-tools.git"
   },
   "keywords": [],
-  "author": "Do-While-For-Each",
+  "author": "Do|While|For|Each",
   "license": "MIT",
   "files": [
     "dist",
