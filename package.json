@@ -25,18 +25,21 @@
     "README.md"
   ],
   "dependencies": {
-    "@do-while-for-each/browser-router": "^2.0.4",
+    "@do-while-for-each/browser-router": "^3.0.1",
     "@do-while-for-each/react": "^1.2.3"
   },
   "devDependencies": {
     "@do-while-for-each/tsconfig": "^1.0.3",
-    "@do-while-for-each/fs": "^1.2.18",
+    "@do-while-for-each/fs": "^1.2.20",
     "@types/autosize": "4.x.x",
     "@types/react": "17.x.x"
   },
   "scripts": {
     "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
-    "build": "dwfeFs rmForce dist --noConfirm && tsc -b src/tsconfig.json && node dist/cjs/dist-others.js"
+    "build": "dwfeFs rmForce dist --noConfirm && tsc -b src/tsconfig.json && node dist/cjs/dist-others.js",
+    "version": "npm run build",
+    "postversion": "git push",
+    "deploy": "npm version patch && npm publish"
   },
   "publishConfig": {
     "access": "public"
