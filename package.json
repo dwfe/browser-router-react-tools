@@ -24,16 +24,19 @@
     "LICENSE",
     "README.md"
   ],
+  "peerDependencies": {
+    "react": "18.x.x"
+  },
   "dependencies": {
-    "@do-while-for-each/browser-router": "^3.0.1",
-    "@do-while-for-each/react": "^2.0.1",
-    "autosize": "4.x.x"
+    "@do-while-for-each/browser-router": "3.x.x",
+    "@do-while-for-each/react-tools": "1.x.x",
+    "autosize": "4.0.4"
   },
   "devDependencies": {
-    "@do-while-for-each/tsconfig": "^1.0.3",
-    "@do-while-for-each/fs": "^1.2.20",
-    "@types/autosize": "4.x.x",
-    "@types/react": "18.x.x"
+    "@do-while-for-each/react-cmmn-packs": "1.x.x",
+    "@do-while-for-each/tsconfig": "1.x.x",
+    "@do-while-for-each/fs": "1.x.x",
+    "@types/autosize": "4.0.1"
   },
   "scripts": {
     "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
